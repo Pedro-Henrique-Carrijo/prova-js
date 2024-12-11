@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Alunos</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="name">Nome do aluno:</label>
+                    <input type="text" id="name" placeholder="Digite o nome do aluno" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="address">Endereço do aluno:</label>
+                    <input type="text" id="address" placeholder="Digite o endereço" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" placeholder="Digite o telefone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Digite o e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" placeholder="Digite a idade" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="grade">Nota:</label>
+                    <input type="number" id="grade" placeholder="Digite a nota" required>
+                </div>
+
+                <button type="button" id="saveButton">Salvar Aluno</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cadastro de Alunos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
