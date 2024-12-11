@@ -7,44 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>FORMULÁRIO DE ALUNOS</h1>
-    </header>
-    <main>
-        <section class="form-container">
-            <form id="studentForm">
-                <div class="form-group">
-                    <label for="name">Nome do aluno:</label>
-                    <input type="text" id="name" placeholder="Digite o nome do aluno" required>
-                </div>
-                <div class="form-group">
-                    <label for="address">Endereço do aluno:</label>
-                    <input type="text" id="address" placeholder="Digite o endereço" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefone:</label>
-                    <input type="tel" id="phone" placeholder="Digite o telefone" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="Digite o e-mail" required>
-                </div>
-                <div class="form-group">
-                    <label for="age">Idade:</label>
-                    <input type="number" id="age" placeholder="Digite a idade" required>
-                </div>
-                <div class="form-group">
-                    <label for="grade">Nota:</label>
-                    <input type="number" id="grade" placeholder="Digite a nota" required>
-                </div>
-                <button type="button" id="saveButton">Salvar Aluno</button>
-            </form>
-            <div id="result"></div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Felipe bom</p>
-    </footer>
+    <div class="container">
+        <h1>Preencha o formulario</h1>
+        <form id="formulario">
+
+            <button type="button" id="salvar">Salvar Aluno</button>
+
+            <label for="nome">Nome do aluno:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do aluno">
+            
+            <label for="endereco">Endereço do aluno:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço">
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite o e-mail">
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="Digite a idade">
+            
+            <label for="nota">Nota:</label>
+            <input type="number" id="nota" name="nota" placeholder="Digite a nota">
+            
+        </form>
+
+        <div class="output" id="output">
+            <p><strong>Nome:</strong></p>
+            <p><strong>Endereço:</strong></p>
+            <p><strong>Telefone:</strong></p>
+            <p><strong>E-mail:</strong></p>
+            <p><strong>Idade:</strong></p>
+            <p><strong>Nota:</strong></p>
+        </div>
+        <p>&copy;Todos os direitos reservados a Pedro Henrique Carrijo</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
